@@ -4,7 +4,8 @@
  */
 package days;
 
-import java.util.Scanner;
+import java.util.Arrays;
+
 
 /**This class takes String input from user 
  * and calls method  to print the 
@@ -23,12 +24,13 @@ public class Days {
      */
     public static void main(String[] args) {
          
-    Scanner in =new Scanner(System.in);
-    System.out.println("Enter the day number (one,two,three,four,five) in string");
-    String code = in.next();
-    Weekdays t= new Weekdays();
-    t.nameOfDay(code); 
+        System.out.println("The days of the week are: ");
+        
+        System.out.println(Arrays.toString(Weekdays.DaysOfTheWeek.values()));
+    }
+    
+   
     }// TODO code application logic here
     
     
-}
+
